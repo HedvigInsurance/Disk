@@ -10,14 +10,12 @@ let package = Package(
     targets: [
         .target(
             name: "Disk",
-            path: "Sources",
-            exclude: ["DiskExample"]
+            path: "Sources"
         ),
         .testTarget(
             name: "DiskTests",
             dependencies: ["Disk"],
-            path: "Tests",
-            exclude:  ["DiskExample"]
+            path: "Tests"
         )
     ]
 )
